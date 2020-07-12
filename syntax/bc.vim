@@ -15,17 +15,16 @@ syn case ignore
 
 " Keywords
 syn keyword bcKeyword if else while for break continue return limits halt quit
-syn keyword bcKeyword define
+syn keyword bcKeyword define auto
 syn keyword bcKeyword length read sqrt print
 syn keyword bcKeyword abs maxibase maxobase maxscale
 syn keyword bcKeyword rand irand maxrand
 
-" Variable
-syn keyword bcType auto
+" Special keywords
+syn keyword bcType scale ibase obase last
+syn keyword bcType seed
 
 " Constant
-syn keyword bcConstant scale ibase obase last
-syn keyword bcConstant seed
 syn keyword bcConstant BC_BASE_MAX BC_DIM_MAX BC_SCALE_MAX BC_STRING_MAX
 syn keyword bcConstant BC_LONG_BIT BC_BASE_DIGS BC_BASE_POW BC_OVERFLOW_MAX
 syn keyword bcConstant BC_NAME_MAX BC_NUM_MAX
@@ -44,7 +43,7 @@ syn match bcNumber		"[0-9]*\.[0-9]\+"
 syn match bcNumber		"[0-9]\+e-\=[0-9]\+"
 syn match bcNumber		"[0-9]*\.[0-9]\+e-\=[0-9]\+"
 
-syn match bcConstant "\."
+syn match bcType "\."
 
 " Only highlight 'void' where it is a keyword
 syn match bcKeyword		"\svoid\s\+\([a-z_][a-z0-9_]*(\)\@="hs=s+1,he=s+5
