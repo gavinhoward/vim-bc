@@ -60,8 +60,6 @@ syn region bcList		matchgroup=Delimiter start="\[" skip="|.\{-}|" matchgroup=Del
 syn match bcParenError			"]"
 syn match bcParenError			")"
 
-
-
 syn case match
 
 " Define the default highlighting.
@@ -75,7 +73,6 @@ hi def link bcComment		Comment
 hi def link bcString		String
 hi def link bcSpecialChar		SpecialChar
 hi def link bcParenError		Error
-
 
 let b:current_syntax = "bc"
 " vim: ts=8
