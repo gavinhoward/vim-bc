@@ -15,12 +15,12 @@ syn case ignore
 
 " Keywords
 syn keyword bcKeyword if else while for break continue return limits halt quit
-syn keyword bcKeyword define auto
-syn keyword bcKeyword length read sqrt print
-syn keyword bcKeyword abs maxibase maxobase maxscale
-syn keyword bcKeyword rand irand maxrand
+syn keyword bcKeyword define auto print
 
 " Special keywords
+syn keyword bcType length read sqrt
+syn keyword bcType abs maxibase maxobase maxscale
+syn keyword bcType rand irand maxrand
 syn keyword bcType scale ibase obase last
 syn keyword bcType seed
 
