@@ -51,6 +51,12 @@ syn match dcShell "!.*$"
 
 syn match dcComment "#.*$" contains=@spell
 
+" Number
+syn match dcNumber		"[0-9]\+"
+syn match dcNumber		"[0-9]*\.[0-9]\+"
+syn match dcNumber		"[0-9]\+e-\=[0-9]\+"
+syn match dcNumber		"[0-9]*\.[0-9]\+e-\=[0-9]\+"
+
 hi def link dcCommand Statement
 hi def link dcComment Comment
 hi def link dcNumber Constant
@@ -63,5 +69,6 @@ hi def link dcFunc Operator
 hi def link dcFunc2 Operator
 hi def link dcString String
 hi def link dcShell PreProc
+hi def link dcNumber Number
 
 let b:currentsyntax = "dc"
