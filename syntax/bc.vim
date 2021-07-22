@@ -22,7 +22,7 @@ syn keyword bcType length read sqrt
 syn keyword bcType abs maxibase maxobase maxscale
 syn keyword bcType rand irand maxrand
 syn keyword bcType scale ibase obase last
-syn keyword bcType seed
+syn keyword bcType seed modexp divmod asciify stream
 
 " Constant
 syn keyword bcConstant BC_BASE_MAX BC_DIM_MAX BC_SCALE_MAX BC_STRING_MAX
