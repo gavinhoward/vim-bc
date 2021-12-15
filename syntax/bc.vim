@@ -38,10 +38,10 @@ syn match bcIdentifier		"[a-z_][a-z0-9_]*"
  syn match bcString		"\"[^"]*\"" contains=@Spell
 
 " Number
-syn match bcNumber		"[0-9]\+"
-syn match bcNumber		"[0-9]*\.[0-9]\+"
-syn match bcNumber		"[0-9]\+e-\=[0-9]\+"
-syn match bcNumber		"[0-9]*\.[0-9]\+e-\=[0-9]\+"
+syn match bcNumber		"[0-9A-Z]\+"
+syn match bcNumber		"[0-9A-Z]*\.[0-9A-Z]\+"
+syn match bcNumber		"[0-9A-Z]\+e-\=[0-9A-Z]\+"
+syn match bcNumber		"[0-9A-Z]*\.[0-9A-Z]\+e-\=[0-9A-Z]\+"
 
 syn match bcType "\."
 
