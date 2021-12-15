@@ -72,6 +72,7 @@ hi def link bcComment		Comment
 hi def link bcString		String
 hi def link bcSpecialChar		SpecialChar
 hi def link bcParenError		Error
+hi def link bcIdentifier		None
 
 let b:current_syntax = "bc"
 " vim: ts=8
