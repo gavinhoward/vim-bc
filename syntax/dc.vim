@@ -52,10 +52,10 @@ syn match dcShell "!.*$"
 syn match dcComment "#.*$" contains=@spell
 
 " Number
-syn match dcNumber		"[0-9A-F]\+"
-syn match dcNumber		"[0-9A-F]*\.[0-9A-F]\+"
-syn match dcNumber		"[0-9A-F]\+e-\=[0-9A-F]\+"
-syn match dcNumber		"[0-9A-F]*\.[0-9A-F]\+e-\=[0-9A-F]\+"
+syn match dcNumber		"\<\([0-9A-F]\+\)\>"
+syn match dcNumber		"\<\([0-9A-F]*\.[0-9A-F]\+\)\>"
+syn match dcNumber		"\<\([0-9A-F]\+e-\=[0-9A-F]\+\)\>"
+syn match dcNumber		"\<\([0-9A-F]*\.[0-9A-F]\+e-\=[0-9A-F]\+\)\>"
 
 hi def link dcCommand Statement
 hi def link dcComment Comment
