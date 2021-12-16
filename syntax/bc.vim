@@ -31,19 +31,19 @@ syn keyword bcConstant BC_NAME_MAX BC_NUM_MAX
 syn keyword bcConstant BC_ENV_ARGS BC_LINE_LENGTH BC_EXPR_EXIT
 syn keyword bcConstant POSIXLY_CORRECT
 
-" Any other stuff
-syn match bcIdentifier		"\<\([a-z_][a-z0-9_]*\)\>"
-
 " String
  syn match bcString		"\"[^"]*\"" contains=@Spell
 
 " Number
-"syn match bcNumber		"\<\([A-Z0-9]\+\)\>"
-"syn match bcNumber		"\<\([0-9A-Z]*\.[0-9A-Z]\+\)\>"
-"syn match bcNumber		"\<\([0-9A-Z]\+e-\=[0-9A-Z]\+\)\>"
-"syn match bcNumber		"\<\([0-9A-Z]*\.[0-9A-Z]\+e-\=[0-9A-Z]\+\)\>"
+syn match bcNumber		"\<\([A-Z0-9]\+\)\>"
+syn match bcNumber		"\<\([0-9A-Z]*\.[0-9A-Z]\+\)\>"
+syn match bcNumber		"\<\([0-9A-Z]\+e-\=[0-9A-Z]\+\)\>"
+syn match bcNumber		"\<\([0-9A-Z]*\.[0-9A-Z]\+e-\=[0-9A-Z]\+\)\>"
 
 syn match bcFunc		"\<\([a-z_][a-z0-9_]*\)\>("hs=s,he=e-1,ms=s,me=e-1
+
+" Any other stuff
+syn match bcIdentifier		"\<\([a-z_][a-z0-9_]*\)\>"
 
 syn match bcType "\."
 
