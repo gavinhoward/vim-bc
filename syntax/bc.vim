@@ -43,6 +43,8 @@ syn match bcNumber		"\<\([0-9A-Z]*\.[0-9A-Z]\+\)\>"
 syn match bcNumber		"\<\([0-9A-Z]\+e-\=[0-9A-Z]\+\)\>"
 syn match bcNumber		"\<\([0-9A-Z]*\.[0-9A-Z]\+e-\=[0-9A-Z]\+\)\>"
 
+syn match bcFunc		"\<\([a-z_][a-z0-9_]*\)\>("hs=s,hs=e-1
+
 syn match bcType "\."
 
 " Only highlight 'void' where it is a keyword
@@ -73,6 +75,7 @@ hi def link bcString		String
 hi def link bcSpecialChar		SpecialChar
 hi def link bcParenError		Error
 hi def link bcIdentifier		None
+hi def link bcFunc				Function
 
 let b:current_syntax = "bc"
 " vim: ts=8
