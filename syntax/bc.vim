@@ -32,7 +32,7 @@ syn keyword bcConstant BC_ENV_ARGS BC_LINE_LENGTH BC_EXPR_EXIT
 syn keyword bcConstant POSIXLY_CORRECT
 
 " Any other stuff
-syn match bcIdentifier		"[a-z_][a-z0-9_]*"
+syn match bcIdentifier		"\<\([a-z_][a-z0-9_]*\)\>"
 
 " String
  syn match bcString		"\"[^"]*\"" contains=@Spell
