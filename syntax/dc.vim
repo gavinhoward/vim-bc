@@ -71,4 +71,10 @@ hi def link dcString String
 hi def link dcShell PreProc
 hi def link dcNumber Number
 
+syn keyword dcTodo contained TODO FIXME XXX NOTE
+syn cluster dcCommentGroup contains=dcTodo
+syn region dcComment start="#" end="$" contains=dcTodo
+
+hi def link dcTodo        Todo
+
 let b:currentsyntax = "dc"

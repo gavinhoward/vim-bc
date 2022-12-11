@@ -77,5 +77,12 @@ hi def link bcParenError		Error
 hi def link bcIdentifier		None
 hi def link bcFunc				Function
 
+syn keyword bcTodo contained TODO FIXME XXX NOTE
+syn cluster bcCommentGroup contains=bcTodo
+syn region bcComment start="/\*" end="\*/" contains=@bcCommentGroup fold
+syn region bcComment start="#" end="$" contains=bcTodo
+
+hi def link bcTodo        Todo
+
 let b:current_syntax = "bc"
 " vim: ts=8
